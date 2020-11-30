@@ -19,10 +19,7 @@ def create_kmers(sequence, kmer_size, make_lower=False):
 	if make_lower:
 		sequence = sequence.lower()
 
-	while index + kmer_size <= len(sequence):
-
-		# Remove the problematic line below
-		index = 0
+	while index + kmer_size <= len(sequence)
 
 		kmers.append(sequence[index:index + kmer_size])
 		
