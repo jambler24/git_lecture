@@ -11,7 +11,7 @@ def create_kmers(sequence, kmer_size, make_lower=False):
 	:param kmer_size: The kmer size
 	:return: Returns a list of the kmers
 	"""
-	
+
 	index = 0
 
 	kmers = []
@@ -21,15 +21,10 @@ def create_kmers(sequence, kmer_size, make_lower=False):
 
 	while index + kmer_size <= len(sequence):
 
-		# Remove the problematic line below
-		index = 0
-
 		kmers.append(sequence[index:index + kmer_size])
-		
+
 		index += 1
-	
+
 	return kmers
 
 print(create_kmers(DNA, 7))
-
-
